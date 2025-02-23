@@ -10,7 +10,7 @@ import math
 @st.cache_data
 def fetch_and_clean_data():
     # Fetch data from URL here, and then clean it up.
-    df = pd.read_excel("Merged Research Data By PID with Demographics.xlsx")
+    df = pd.read_excel("views/Drug Analysis/Merged Research Data By PID with Demographics.xlsx")
     df = df.dropna(subset=['AGE'])
     df['AGE'] = df['AGE'].astype('int')
     df['SEX'] = df['SEX'].replace({"M":"Male", "F":"Female"})
