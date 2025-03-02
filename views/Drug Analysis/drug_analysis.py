@@ -62,6 +62,7 @@ elif option == "Exploratory Data Analysis":
     st.bar_chart(drug_therapy_df, x='DRUG', y='count',color='THERAPY')
 
 
+# Shows the graphs that contain the HAMD analysis graphs
 
 elif option == "HAMD":
     
